@@ -222,6 +222,20 @@
 		4E2F6A701C43CA4B00A25502 /* member_type_90@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E2F6A6A1C43CA4B00A25502 /* member_type_90@2x.png */; };
 		4E2F6A711C43CA4B00A25502 /* member_type_90@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E2F6A6B1C43CA4B00A25502 /* member_type_90@3x.png */; };
 		4E35A99F1A3EC47E00CE35F1 /* FileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E35A99E1A3EC47E00CE35F1 /* FileViewController.m */; };
+		4E363C991E03BEB4000C08C8 /* EADeviceToServerLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E363C841E03BEB4000C08C8 /* EADeviceToServerLog.m */; };
+		4E363C9A1E03BEB4000C08C8 /* EANetTraceRoute.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E363C861E03BEB4000C08C8 /* EANetTraceRoute.m */; };
+		4E363C9B1E03BEB4000C08C8 /* LDNetConnect.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E363C891E03BEB4000C08C8 /* LDNetConnect.m */; };
+		4E363C9C1E03BEB4000C08C8 /* LDNetDiagnoService.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E363C8B1E03BEB4000C08C8 /* LDNetDiagnoService.m */; };
+		4E363C9D1E03BEB4000C08C8 /* LDNetGetAddress.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E363C8D1E03BEB4000C08C8 /* LDNetGetAddress.m */; };
+		4E363C9E1E03BEB4000C08C8 /* LDNetPing.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E363C8F1E03BEB4000C08C8 /* LDNetPing.m */; };
+		4E363C9F1E03BEB4000C08C8 /* LDNetTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E363C911E03BEB4000C08C8 /* LDNetTimer.m */; };
+		4E363CA01E03BEB4000C08C8 /* LDNetTraceRoute.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E363C931E03BEB4000C08C8 /* LDNetTraceRoute.m */; };
+		4E363CA11E03BEB4000C08C8 /* LDSimplePing.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E363C951E03BEB4000C08C8 /* LDSimplePing.m */; };
+		4E363CA21E03BEB5000C08C8 /* NSData+gzip.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E363C981E03BEB4000C08C8 /* NSData+gzip.m */; };
+		4E363CA61E03C1DA000C08C8 /* ObjectiveGit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E363CA51E03C1DA000C08C8 /* ObjectiveGit.framework */; };
+		4E363CA91E03C48B000C08C8 /* libresolv.9.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E363CA81E03C48B000C08C8 /* libresolv.9.tbd */; };
+		4E363CAB1E03C618000C08C8 /* ObjectiveGit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E363CAA1E03C618000C08C8 /* ObjectiveGit.framework */; };
+		4E363CAC1E03C618000C08C8 /* ObjectiveGit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4E363CAA1E03C618000C08C8 /* ObjectiveGit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4E38CF5F1A7A28AF005536C0 /* CodeBranchTagButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E38CF5E1A7A28AF005536C0 /* CodeBranchTagButton.m */; };
 		4E38CF621A7B7C99005536C0 /* CodeBranchOrTag.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E38CF611A7B7C99005536C0 /* CodeBranchOrTag.m */; };
 		4E38CF641A7B8DD4005536C0 /* icon_triangle@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E38CF631A7B8DD4005536C0 /* icon_triangle@2x.png */; };
@@ -1213,6 +1227,20 @@
 		E7A046A01A47279E00528C12 /* Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = E7A0469F1A47279E00528C12 /* Helper.m */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		4E363CAD1E03C618000C08C8 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				4E363CAC1E03C618000C08C8 /* ObjectiveGit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		0A03E6D11ABD0F690034BB8E /* LocationHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationHelper.h; sourceTree = "<group>"; };
 		0A03E6D21ABD0F690034BB8E /* LocationHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationHelper.m; sourceTree = "<group>"; };
@@ -1520,6 +1548,30 @@
 		4E2F6A6B1C43CA4B00A25502 /* member_type_90@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "member_type_90@3x.png"; sourceTree = "<group>"; };
 		4E35A99D1A3EC47E00CE35F1 /* FileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileViewController.h; sourceTree = "<group>"; };
 		4E35A99E1A3EC47E00CE35F1 /* FileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FileViewController.m; sourceTree = "<group>"; };
+		4E363C831E03BEB4000C08C8 /* EADeviceToServerLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EADeviceToServerLog.h; sourceTree = "<group>"; };
+		4E363C841E03BEB4000C08C8 /* EADeviceToServerLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EADeviceToServerLog.m; sourceTree = "<group>"; };
+		4E363C851E03BEB4000C08C8 /* EANetTraceRoute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EANetTraceRoute.h; sourceTree = "<group>"; };
+		4E363C861E03BEB4000C08C8 /* EANetTraceRoute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EANetTraceRoute.m; sourceTree = "<group>"; };
+		4E363C881E03BEB4000C08C8 /* LDNetConnect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDNetConnect.h; sourceTree = "<group>"; };
+		4E363C891E03BEB4000C08C8 /* LDNetConnect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDNetConnect.m; sourceTree = "<group>"; };
+		4E363C8A1E03BEB4000C08C8 /* LDNetDiagnoService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDNetDiagnoService.h; sourceTree = "<group>"; };
+		4E363C8B1E03BEB4000C08C8 /* LDNetDiagnoService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDNetDiagnoService.m; sourceTree = "<group>"; };
+		4E363C8C1E03BEB4000C08C8 /* LDNetGetAddress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDNetGetAddress.h; sourceTree = "<group>"; };
+		4E363C8D1E03BEB4000C08C8 /* LDNetGetAddress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDNetGetAddress.m; sourceTree = "<group>"; };
+		4E363C8E1E03BEB4000C08C8 /* LDNetPing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDNetPing.h; sourceTree = "<group>"; };
+		4E363C8F1E03BEB4000C08C8 /* LDNetPing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDNetPing.m; sourceTree = "<group>"; };
+		4E363C901E03BEB4000C08C8 /* LDNetTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDNetTimer.h; sourceTree = "<group>"; };
+		4E363C911E03BEB4000C08C8 /* LDNetTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDNetTimer.m; sourceTree = "<group>"; };
+		4E363C921E03BEB4000C08C8 /* LDNetTraceRoute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDNetTraceRoute.h; sourceTree = "<group>"; };
+		4E363C931E03BEB4000C08C8 /* LDNetTraceRoute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDNetTraceRoute.m; sourceTree = "<group>"; };
+		4E363C941E03BEB4000C08C8 /* LDSimplePing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDSimplePing.h; sourceTree = "<group>"; };
+		4E363C951E03BEB4000C08C8 /* LDSimplePing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDSimplePing.m; sourceTree = "<group>"; };
+		4E363C961E03BEB4000C08C8 /* Route.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Route.h; sourceTree = "<group>"; };
+		4E363C971E03BEB4000C08C8 /* NSData+gzip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+gzip.h"; sourceTree = "<group>"; };
+		4E363C981E03BEB4000C08C8 /* NSData+gzip.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+gzip.m"; sourceTree = "<group>"; };
+		4E363CA51E03C1DA000C08C8 /* ObjectiveGit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjectiveGit.framework; path = Carthage/Build/iOS/ObjectiveGit.framework; sourceTree = "<group>"; };
+		4E363CA81E03C48B000C08C8 /* libresolv.9.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.9.tbd; path = usr/lib/libresolv.9.tbd; sourceTree = SDKROOT; };
+		4E363CAA1E03C618000C08C8 /* ObjectiveGit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjectiveGit.framework; path = Carthage/Build/iOS/ObjectiveGit.framework; sourceTree = "<group>"; };
 		4E38CF5D1A7A28AF005536C0 /* CodeBranchTagButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CodeBranchTagButton.h; sourceTree = "<group>"; };
 		4E38CF5E1A7A28AF005536C0 /* CodeBranchTagButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CodeBranchTagButton.m; sourceTree = "<group>"; };
 		4E38CF601A7B7C99005536C0 /* CodeBranchOrTag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CodeBranchOrTag.h; sourceTree = "<group>"; };
@@ -3001,9 +3053,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E363CA91E03C48B000C08C8 /* libresolv.9.tbd in Frameworks */,
+				4E363CA61E03C1DA000C08C8 /* ObjectiveGit.framework in Frameworks */,
 				4EDBECEB1B709EB3003E87C3 /* AVFoundation.framework in Frameworks */,
 				0AB591AD1AB6D51C0076C454 /* MapKit.framework in Frameworks */,
 				0A6E6BBF1AB180CB004C0107 /* CoreLocation.framework in Frameworks */,
+				4E363CAB1E03C618000C08C8 /* ObjectiveGit.framework in Frameworks */,
 				4EDD8F5C1A36F52700E9E232 /* libsqlite3.0.dylib in Frameworks */,
 				4EDD8F5A1A36F4FA00E9E232 /* Security.framework in Frameworks */,
 				4EDD8F581A36F4CA00E9E232 /* CoreTelephony.framework in Frameworks */,
@@ -3399,6 +3454,42 @@
 				4E2F6A6B1C43CA4B00A25502 /* member_type_90@3x.png */,
 			);
 			path = member_type;
+			sourceTree = "<group>";
+		};
+		4E363C821E03BEB4000C08C8 /* EADeviceToServerLog */ = {
+			isa = PBXGroup;
+			children = (
+				4E363C871E03BEB4000C08C8 /* LDNetDiagnoService */,
+				4E363C831E03BEB4000C08C8 /* EADeviceToServerLog.h */,
+				4E363C841E03BEB4000C08C8 /* EADeviceToServerLog.m */,
+				4E363C851E03BEB4000C08C8 /* EANetTraceRoute.h */,
+				4E363C861E03BEB4000C08C8 /* EANetTraceRoute.m */,
+				4E363C971E03BEB4000C08C8 /* NSData+gzip.h */,
+				4E363C981E03BEB4000C08C8 /* NSData+gzip.m */,
+			);
+			path = EADeviceToServerLog;
+			sourceTree = "<group>";
+		};
+		4E363C871E03BEB4000C08C8 /* LDNetDiagnoService */ = {
+			isa = PBXGroup;
+			children = (
+				4E363C881E03BEB4000C08C8 /* LDNetConnect.h */,
+				4E363C891E03BEB4000C08C8 /* LDNetConnect.m */,
+				4E363C8A1E03BEB4000C08C8 /* LDNetDiagnoService.h */,
+				4E363C8B1E03BEB4000C08C8 /* LDNetDiagnoService.m */,
+				4E363C8C1E03BEB4000C08C8 /* LDNetGetAddress.h */,
+				4E363C8D1E03BEB4000C08C8 /* LDNetGetAddress.m */,
+				4E363C8E1E03BEB4000C08C8 /* LDNetPing.h */,
+				4E363C8F1E03BEB4000C08C8 /* LDNetPing.m */,
+				4E363C901E03BEB4000C08C8 /* LDNetTimer.h */,
+				4E363C911E03BEB4000C08C8 /* LDNetTimer.m */,
+				4E363C921E03BEB4000C08C8 /* LDNetTraceRoute.h */,
+				4E363C931E03BEB4000C08C8 /* LDNetTraceRoute.m */,
+				4E363C941E03BEB4000C08C8 /* LDSimplePing.h */,
+				4E363C951E03BEB4000C08C8 /* LDSimplePing.m */,
+				4E363C961E03BEB4000C08C8 /* Route.h */,
+			);
+			path = LDNetDiagnoService;
 			sourceTree = "<group>";
 		};
 		4E4972E51BB5446900F3AC15 /* tips_menu */ = {
@@ -4201,6 +4292,7 @@
 		4ECE8AEA1A3946C10021E29C /* Manager */ = {
 			isa = PBXGroup;
 			children = (
+				4E363C821E03BEB4000C08C8 /* EADeviceToServerLog */,
 				4ECE8AEB1A3946C10021E29C /* AddressManager.h */,
 				4ECE8AEC1A3946C10021E29C /* AddressManager.m */,
 				4ECE8AED1A3946C10021E29C /* Coding_FileManager.h */,
@@ -4481,6 +4573,7 @@
 		8E477007198770E700997D05 = {
 			isa = PBXGroup;
 			children = (
+				4E363CAA1E03C618000C08C8 /* ObjectiveGit.framework */,
 				8EA6CF1319E240C40076D59C /* Coding_iOS */,
 				8E477012198770E700997D05 /* Frameworks */,
 				8E477011198770E700997D05 /* Products */,
@@ -4501,6 +4594,8 @@
 		8E477012198770E700997D05 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4E363CA81E03C48B000C08C8 /* libresolv.9.tbd */,
+				4E363CA51E03C1DA000C08C8 /* ObjectiveGit.framework */,
 				4EDBECEA1B709EB3003E87C3 /* AVFoundation.framework */,
 				4EF818231B09D8D8005F974B /* WebP.framework */,
 				0A6E6BBE1AB180CB004C0107 /* CoreLocation.framework */,
@@ -5912,6 +6007,8 @@
 				8E47700E198770E700997D05 /* Resources */,
 				B52B540CD39100358CEE8516 /* [CP] Embed Pods Frameworks */,
 				B7C390DEFD2073480C56FD88 /* [CP] Copy Pods Resources */,
+				4E363CA71E03C240000C08C8 /* ShellScript */,
+				4E363CAD1E03C618000C08C8 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -6611,6 +6708,20 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		4E363CA71E03C240000C08C8 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/ObjectiveGit.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
 		B52B540CD39100358CEE8516 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -6698,6 +6809,7 @@
 				D0C447B91C02C63000DC1C4B /* UserSearchCell.m in Sources */,
 				4E83AE7B1CF30F1A006BA3BB /* SettingEmailViewController.m in Sources */,
 				8EF643BA19FF7E2900F7EEB0 /* MemberCell.m in Sources */,
+				4E363C9F1E03BEB4000C08C8 /* LDNetTimer.m in Sources */,
 				4ECE8B021A3946C10021E29C /* JobManager.m in Sources */,
 				4E0BD8561B6C7DFD0061CAA6 /* UIView+Frame.m in Sources */,
 				4ECE8B031A3946C10021E29C /* TagsManager.m in Sources */,
@@ -6713,6 +6825,7 @@
 				4E996BE21ABA957B00C704F1 /* ProjectListViewController.m in Sources */,
 				4E743E6D1A88A3CC00DADDE5 /* EaseMarkdownTextView.m in Sources */,
 				8EA6D1B519E240C40076D59C /* ListGroupItem.m in Sources */,
+				4E363C9A1E03BEB4000C08C8 /* EANetTraceRoute.m in Sources */,
 				4E80E93C1E02353900DE1BC6 /* CodingSearchDisplayView.m in Sources */,
 				8EA6D13919E240C40076D59C /* MyTask_RootViewController.m in Sources */,
 				8E1C3E0A19E8DFE300EF3032 /* SettingAccountViewController.m in Sources */,
@@ -6736,6 +6849,7 @@
 				4E2ECEAD1BD4D51000CB6EC9 /* ProjectTransferSettingViewController.m in Sources */,
 				4EABD2571AD3CAAC005E515F /* UIMessageInputView_Add.m in Sources */,
 				7EB02FCE1B6CF5D500D2166C /* UIMessageInputView_Voice.m in Sources */,
+				4E363C9B1E03BEB4000C08C8 /* LDNetConnect.m in Sources */,
 				8E59F0E21A0098BA009A905F /* UIScrollView+SVInfiniteScrolling.m in Sources */,
 				4E0022831B72095E005308DE /* PointRecord.m in Sources */,
 				927AFF3E1BFF608700AAE593 /* ShopGoodsCCell.m in Sources */,
@@ -6848,6 +6962,7 @@
 				4E72F82D1B144778001B6CE6 /* NSMutableString+Common.m in Sources */,
 				4E25271A1C327FAE0032A7F4 /* UIViewController+BackButtonHandler.m in Sources */,
 				4EBD7FB41CE4833D00B3AF49 /* CountryCodeCell.m in Sources */,
+				4E363C9E1E03BEB4000C08C8 /* LDNetPing.m in Sources */,
 				13C8FE7F1CA79B90001E30FA /* DynamicActivityCell.m in Sources */,
 				4E4D6A791B1C6C7800FD2E49 /* MRPRDetailCell.m in Sources */,
 				8EF643CA19FF7E2900F7EEB0 /* TopicContentCell.m in Sources */,
@@ -6954,6 +7069,7 @@
 				8EF643C219FF7E2900F7EEB0 /* TaskCommentTopCell.m in Sources */,
 				4E4D6A611B1C65C100FD2E49 /* MRPRCommitsViewController.m in Sources */,
 				8E64ED7D19ED0CE3006E99DA /* QBAssetsCollectionOverlayView.m in Sources */,
+				4E363CA21E03BEB5000C08C8 /* NSData+gzip.m in Sources */,
 				4E0BD86B1B6C7E3D0061CAA6 /* CSLikesVC.m in Sources */,
 				8EA6D14919E240C40076D59C /* UserOrProjectTweetsViewController.m in Sources */,
 				4E4D6AA01B1D89D400FD2E49 /* CommitDetail.m in Sources */,
@@ -6964,6 +7080,7 @@
 				8EA6D1B319E240C40076D59C /* File.m in Sources */,
 				923399751C00ABDE00F29E04 /* ShopOrderViewController.m in Sources */,
 				4E8D5D7D1B462ADB00B70936 /* OTPTableViewCell.m in Sources */,
+				4E363C9C1E03BEB4000C08C8 /* LDNetDiagnoService.m in Sources */,
 				4EABD25A1AD3CB4A005E515F /* UIMessageInputView_CCell.m in Sources */,
 				134E1BA61CA41671002A3E0D /* DemoModel.m in Sources */,
 				8EF643C019FF7E2900F7EEB0 /* TaskCommentBlankCell.m in Sources */,
@@ -7067,6 +7184,7 @@
 				8EF643CB19FF7E2900F7EEB0 /* TweetCell.m in Sources */,
 				4ECE8ADF1A3943E80021E29C /* UIBarButtonItem+Common.m in Sources */,
 				4E5D12FE1C0C5EE600985AEB /* RRFPSBar.m in Sources */,
+				4E363C991E03BEB4000C08C8 /* EADeviceToServerLog.m in Sources */,
 				4E996BD01ABA774800C704F1 /* EaseUserHeaderView.m in Sources */,
 				4E0022921B721973005308DE /* PointRecordCell.m in Sources */,
 				4E5A66951B268D160007A0AD /* UIView+PressMenu.m in Sources */,
@@ -7088,6 +7206,7 @@
 				8EA6D1C919E240C40076D59C /* UICustomCollectionView.m in Sources */,
 				4ECE8ADC1A3943E80021E29C /* NSObject+Common.m in Sources */,
 				8E97CEBF1A0CB7E3006F9AD7 /* SMPageControl.m in Sources */,
+				4E363C9D1E03BEB4000C08C8 /* LDNetGetAddress.m in Sources */,
 				8EA6D12A19E240C40076D59C /* Coding_iOS.xcdatamodeld in Sources */,
 				8EA6D12D19E240C40076D59C /* ConversationViewController.m in Sources */,
 				4EDC33CE1AFB4DCC00698315 /* EaseInputTipsView.m in Sources */,
@@ -7121,6 +7240,7 @@
 				4ECF70461B18557E000280FF /* MRPRS.m in Sources */,
 				4ECE8AE41A3943E80021E29C /* UIImage+Common.m in Sources */,
 				8EF643D619FF7E9F00F7EEB0 /* ProjectTopicCell.m in Sources */,
+				4E363CA11E03BEB4000C08C8 /* LDSimplePing.m in Sources */,
 				4E4D6A8B1B1C6E3100FD2E49 /* TextCheckMarkCell.m in Sources */,
 				4E6BA2DA1A1EE6AF005FD721 /* AFHTTPSessionManager.m in Sources */,
 				4E94C5121B4E0C0300EB668A /* XHRealTimeBlur.m in Sources */,
@@ -7199,6 +7319,7 @@
 				4E715A351BB1279D00A5D24B /* LocalFileCell.m in Sources */,
 				1309B9FA1CA2D3960034C7A3 /* MRReviewerListCell.m in Sources */,
 				8EA6D1CB19E240C40076D59C /* UITapImageView.m in Sources */,
+				4E363CA01E03BEB4000C08C8 /* LDNetTraceRoute.m in Sources */,
 				4E8D5D5D1B45295D00B70936 /* NSURL+OTPURLArguments.m in Sources */,
 				4EAE06AB1B7B23EA00179F4B /* FileActivitiesViewController.m in Sources */,
 				4E715A321BB1278200A5D24B /* LocalFolderCell.m in Sources */,
@@ -7320,6 +7441,8 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(SRCROOT)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -7329,9 +7452,11 @@
 					/usr/include/libxml2,
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					"Pods/evernote-cloud-sdk-ios/**",
+					"$(SRCROOT)/Carthage/Build/iOS/ObjectiveGit.framework/Headers/",
 				);
 				INFOPLIST_FILE = "Coding_iOS/Coding_iOS-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Coding_iOS/Vendor/XGPush",
@@ -7360,6 +7485,8 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
+					"$(SRCROOT)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
 				);
 				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -7369,9 +7496,11 @@
 					/usr/include/libxml2,
 					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
 					"Pods/evernote-cloud-sdk-ios/**",
+					"$(SRCROOT)/Carthage/Build/iOS/ObjectiveGit.framework/Headers/",
 				);
 				INFOPLIST_FILE = "Coding_iOS/Coding_iOS-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Coding_iOS/Vendor/XGPush",
