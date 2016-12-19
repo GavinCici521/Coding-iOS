@@ -8,7 +8,7 @@
 
 //MinIntervalDutation 单位（秒）
 #define kEALogKey_PostServerPath @"https://tracker.coding.net/v1"
-#define kEALogKey_MinIntervalDutation (60 * 30 * 0)
+#define kEALogKey_MinIntervalDutation (60 * 30)
 #define kEALogKey_LogFileName @"deviceLog"
 #define kEALogKey_LastTimeLogDate @"ealastTimeLogDate"
 #define kEALogKey_StartTime @"startTime"
